@@ -58,7 +58,7 @@
 .seagull {
   height: 8vmin;
   position: absolute;
-  margin-top: 15vmin;
+  margin-top: 25vmin;
   margin-left: 650vmin;
   z-index: 4;
   animation: bob 1.7s infinite ease-in-out;
@@ -68,7 +68,7 @@
   height: 20vmin;
   position: fixed;
   margin-top: 48vmin;
-  margin-left: 5vmin;
+  margin-left: 65vmin;
   z-index: 2;
   animation: swing 2s infinite ease-in-out;
   animation: bob 2s infinite ease-in-out;
@@ -80,5 +80,32 @@
   z-index: 2;
   margin-left: 1454vmin;
   margin-top: 50vmin;
+}
 
+.dock-flipped {
+  height: 25vmin;
+  position: absolute;
+  z-index: 2;
+  margin-top: 50vmin;
+}
+
+.quote {
+  font-family: serif;
+  font-size: 6vmin;
+  color: black;
+  position: absolute;
+  z-index: 5;
+  margin-left: 10vmin;
+  margin-right: -1400vmin;
+  margin-top: 15vmin;
+}
+
+.quote-credit {
+  font-family: serif;
+  font-size: 6vmin;
+  color: black;
+  position: absolute;
+  z-index: 5;
+  margin-left: 1425vmin;
+  margin-top: 40vmin;
 }
