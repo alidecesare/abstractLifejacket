@@ -1,0 +1,84 @@
+* {
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@keyframes swing {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(-4px); }
+  50% { transform: translateY(4px); }
+}
+
+@keyframes shift {
+  0%, 100% { transform: translateX(-6px); }
+  50% { transform: translateX(1px); }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+}
+.bg {
+  height: 96.5vmin;
+  position: absolute;
+  z-index: 0;
+}
+
+.waves-bottom {
+  height: 35.1vmin;
+  position: absolute;
+  margin-top: 63vmin;
+  z-index: 3;
+  animation: bob 3.5s infinite ease-in-out;
+}
+
+.waves-top {
+  height: 20vmin;
+  position: absolute;
+  margin-top: 50vmin;
+  z-index: 1;
+  animation: bob 3.8s infinite ease-in-out;
+}
+
+.clouds {
+  margin-top: 10vmin;
+  height: 20vmin;
+  position: absolute;
+  z-index: 4;
+  animation: bob 4s infinite ease-in-out;
+  animation: shift 2s infinite ease-in-out;
+
+}
+
+.seagull {
+  height: 8vmin;
+  position: absolute;
+  margin-top: 15vmin;
+  margin-left: 650vmin;
+  z-index: 4;
+  animation: bob 1.7s infinite ease-in-out;
+}
+
+.boat {
+  height: 20vmin;
+  position: fixed;
+  margin-top: 48vmin;
+  margin-left: 5vmin;
+  z-index: 2;
+  animation: swing 2s infinite ease-in-out;
+  animation: bob 2s infinite ease-in-out;
+}
+
+.dock {
+  height: 25vmin;
+  position: absolute;
+  z-index: 2;
+  margin-left: 1454vmin;
+  margin-top: 50vmin;
+
+}
